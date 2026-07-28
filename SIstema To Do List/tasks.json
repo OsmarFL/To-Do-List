@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "Titulo": "Estudiar",
+    "Descripcion": "Dedicar por lo menos 1h a repasar el material de estudio.",
+    "FechaCreacion": "2026-07-28T18:30:06.6797935-04:00",
+    "FechaLimite": "2026-07-28T22:30:00Z",
+    "Estado": "Completada"
+  },
+  {
+    "Id": 2,
+    "Titulo": "Ir al gimnasio",
+    "Descripcion": "Hacer ejercicio o ir al gimnasio por lo menos por 45 minutos.",
+    "FechaCreacion": "2026-07-28T18:30:49.966158-04:00",
+    "FechaLimite": "2026-07-30T23:30:00Z",
+    "Estado": "Pendiente"
+  },
+  {
+    "Id": 3,
+    "Titulo": "Leer un libro",
+    "Descripcion": "30 minutos de lectura.",
+    "FechaCreacion": "2026-07-28T18:31:17.4147173-04:00",
+    "FechaLimite": "2026-07-29T01:30:00Z",
+    "Estado": "Pendiente"
+  }
+]

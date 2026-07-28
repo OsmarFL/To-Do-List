@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO List</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <header>
+        <h1>TODO List</h1>
+        <p class="subtitulo">Sistema de gestión de tareas</p>
+    </header>
+
+    <main>
+
+        <!-- ── FORMULARIO CREAR TAREA ── -->
+        <section class="formulario-card">
+            <h2>Nueva Tarea</h2>
+
+            <div class="form-group">
+                <label for="titulo">Título *</label>
+                <input type="text" id="titulo" placeholder="Título de la tarea" />
+            </div>
+
+            <div class="form-group">
+                <label for="descripcion">Descripción</label>
+                <textarea id="descripcion" placeholder="Descripción opcional"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="fechaLimite">Fecha Límite</label>
+                <input type="datetime-local" id="fechaLimite" />
+            </div>
+
+            <button class="btn btn-crear" onclick="crearTarea()">
+                 Crear Tarea
+            </button>
+        </section>
+
+        <!-- ── FILTROS ── -->
+        <section class="controles">
+            <div class="filtros">
+                <button class="btn btn-filtro activo" onclick="filtrar('todos')">Todas</button>
+                <button class="btn btn-filtro" onclick="filtrar('Pendiente')">Pendientes</button>
+                <button class="btn btn-filtro" onclick="filtrar('Completada')">Completadas</button>
+            </div>
+        </section>
+
+        <!-- ── LOADER ── -->
+        <div id="loader" class="loader oculto">
+            <div class="spinner"></div>
+            <p>Cargando...</p>
+        </div>
+
+        <!-- ── MENSAJE ERROR ── -->
+        <div id="mensajeError" class="error oculto"></div>
+
+        <!-- ── LISTADO DE TAREAS ── -->
+        <section id="contenedorTareas" class="grid-tareas"></section>
+
+    </main>
+
+    <footer>
+        <p>API: <a href="https://localhost:7165/swagger/index.html" target="_blank">localhost — Swagger UI</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
